@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Book</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="box bg-secondary bg-opacity-10 mt-5 p-2">
+      <div class="w-50 mt-5 py-4 mx-auto bg-success bg-opacity-75 text-center rounded-2">
+        <h2 class="text-white">Contact Book</h2>
+      </div>
+      <form class="js-form my-5" method="post">
+        <div class="row">
+          <div class="col-12 offset-md-2 col-md-4 mb-3">
+            <input class="form-control w-100 mb-3 user-name" placeholder="Enter your name" min="2" type="text" required>
+            <input class="form-control w-100 mb-3 user-personality" placeholder="Personality" type="text" min="2" required list="family">
+            <datalist class="data-list" id="family">
+              <option value="Father">
+              <option value="Mother">
+              <option value="Sister">
+              <option value="Brother">
+              <option value="Friend">
+            </datalist>
+            <input class="form-control w-100 mb-3 user-phone" placeholder="Enter your phone number" type="tel" required>
+            <div class="w-25 mx-auto text-center mt-4">
+              <button class="btn btn-outline-primary">CHECK</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <ul class="list-unstyled"></ul>
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
