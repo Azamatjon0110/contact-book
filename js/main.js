@@ -4,6 +4,7 @@ const elForm = document.querySelector(".js-form");
 const elNameInput = elForm.querySelector(".user-name");
 const elPersonalityInput = elForm.querySelector(".user-personality");
 const elPhone = elForm.querySelector(".user-phone");
+const arr = [];
 
 elForm.addEventListener("submit", function(evt){
   evt.preventDefault();
@@ -14,7 +15,6 @@ elForm.addEventListener("submit", function(evt){
     userPhone: elPhone.value,
   }
 
-  const arr = [];
   arr.push(user);
   elForm.reset();
   list.innerHTML = "";
@@ -54,6 +54,7 @@ elForm.addEventListener("submit", function(evt){
     item.appendChild(buttonElement)
     list.appendChild(item);
   }
+
 
 
 })

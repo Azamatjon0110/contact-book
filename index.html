@@ -14,9 +14,9 @@
       <div class="w-50 mt-5 py-4 mx-auto bg-success bg-opacity-75 text-center rounded-2">
         <h2 class="text-white">Contact Book</h2>
       </div>
-      <form class="js-form my-5" method="post">
-        <div class="row">
-          <div class="col-12 offset-md-2 col-md-4 mb-3">
+      <div class="row">
+        <div class="col-12 offset-md-2 col-md-4 mb-3">
+            <form class="js-form my-5" method="post">
             <input class="form-control w-100 mb-3 user-name" placeholder="Enter your name" min="2" type="text" required>
             <input class="form-control w-100 mb-3 user-personality" placeholder="Personality" type="text" min="2" required list="family">
             <datalist class="data-list" id="family">
@@ -27,18 +27,17 @@
               <option value="Friend">
             </datalist>
             <input class="form-control w-100 mb-3 user-phone" placeholder="Enter your phone number" type="tel" required>
-            <div class="w-25 mx-auto text-center mt-4">
+            <div class="w-50 mx-auto text-center mt-4">
               <button class="btn btn-outline-primary">CHECK</button>
             </div>
+          </form>
           </div>
-          <div class="col-12 col-md-4 mb-3">
+          <div class="col-12 col-md-4 mt-5 mb-3">
             <ul class="list-unstyled"></ul>
-
           </div>
         </div>
-      </form>
+        </div>
     </div>
-  </div>
 
   <script src="./js/main.js"></script>
 </body>
